@@ -1,0 +1,83 @@
+:root {
+    --green: #00FF00;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: helvetica;
+    color: var(--fontColor);
+    background: var(--bg);
+    transition: background 0.3s, color 0.3s;
+    padding: 20px;
+}
+
+ul {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+li {
+    list-style: circle;
+    margin: 10px 0;
+}
+
+.list {
+    list-style: square;
+}
+
+#msg {
+    font-family: monospace;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* TEMA CLARO - Fundo Verde, Letras Pretas */
+.light-theme {
+    --bg: #00FF00;
+    --fontColor: #000000;
+    --btnBg: #000000;
+    --btnFontColor: #FFFFFF;
+}
+
+/* TEMA ESCURO - Fundo Preto, Letras Verdes */
+.dark-theme {
+    --bg: #000000;
+    --fontColor: #00FF00;
+    --btnBg: #00FF00;
+    --btnFontColor: #000000;
+}
+
+.btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    border: 2px solid var(--fontColor);
+    color: var(--btnFontColor);
+    background: var(--btnBg);
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:focus { 
+    outline: none; 
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 28px;
+}   
